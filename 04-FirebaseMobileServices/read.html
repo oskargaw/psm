@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+    <title>Save to database</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="personalData" class="cell-border" style="width: 100%;">
+      <thead>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th>Job title</th>
+        </tr>
+      </thead>
+      <tbody id="personTableBody">
+        <tr>
+          <td>Tiger</td>
+          <td>Nixon</td>
+          <td>tigernix@usgs.gov</td>
+          <td>Male</td>
+          <td>Accountant</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="./read.js"></script>
+  </body>
+</html>
